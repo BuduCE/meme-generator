@@ -1,0 +1,13 @@
+.Title{
+    height: 65px;
+    padding: 20px;
+    background: linear-gradient(#672280);
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+
+}
+.Title > img{
+    w
+}
