@@ -1,21 +1,27 @@
 import React from 'react'
 import './styles.css'
-// import image from './image.jpg'
+import image from './image.jpg'
 import memesData from '../../memesData'
 
 const Meme = () => {
-  const memes = memesData.data.memes
-  const randomMeme = Math.floor(Math.random() * memes.length)
-  // const urlAddress = memes[urlLen].url
-  const [memeImg, setMemeImg] = React.useState('')
+    const displayImg =()=>{
+        const memes = memesData.data.memes
+        const urlLen = Math.floor(Math.random() * memes.length)
+        const urlAddress = memes[urlLen].url
+        alert(urlAddress)
+    }
 
-  const displayImg =()=>{
-      setMemeImg(memes[randomMeme].url)
-      // alert(urlAddress)
-  }
+    const result = React.useState('Hello')
 
-  const result = React.useState('Hello')
-
+    const [isImportant, setIsImportant] = React.useState('Yes')
+    
+    const handleClick = () => {
+      if(isImportant === 'Yes'){
+        setIsImportant('No')
+      } else {
+        setIsImportant('Yes')
+      }
+    }
   return (
     <div className='form'>
         <div className="meme-txt">
@@ -29,7 +35,7 @@ const Meme = () => {
 
         {/* {isImportant}         */}
 
-        <img src={memeImg} alt="" />
+        <img src={image} alt="" />
     </div>
   )
 }

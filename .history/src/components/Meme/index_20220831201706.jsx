@@ -10,7 +10,7 @@ const Meme = () => {
   const [memeImg, setMemeImg] = React.useState('')
 
   const displayImg =()=>{
-      setMemeImg(memes[randomMeme].url)
+      setMemeImg(memes[random])
       // alert(urlAddress)
   }
 

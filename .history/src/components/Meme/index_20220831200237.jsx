@@ -1,17 +1,17 @@
 import React from 'react'
 import './styles.css'
-// import image from './image.jpg'
+import image from './image.jpg'
 import memesData from '../../memesData'
 
 const Meme = () => {
   const memes = memesData.data.memes
-  const randomMeme = Math.floor(Math.random() * memes.length)
-  // const urlAddress = memes[urlLen].url
-  const [memeImg, setMemeImg] = React.useState('')
+  const [memeImg, setMemeImg] = React.useState(memes.url)
 
   const displayImg =()=>{
-      setMemeImg(memes[randomMeme].url)
-      // alert(urlAddress)
+      const urlLen = Math.floor(Math.random() * memes.length)
+      const urlAddress = memes[urlLen].url
+      setMemeImg =
+      alert(urlAddress)
   }
 
   const result = React.useState('Hello')

@@ -5,12 +5,12 @@ import memesData from '../../memesData'
 
 const Meme = () => {
   const memes = memesData.data.memes
-  const randomMeme = Math.floor(Math.random() * memes.length)
-  // const urlAddress = memes[urlLen].url
-  const [memeImg, setMemeImg] = React.useState('')
+  const urlLen = Math.floor(Math.random() * memes.length)
+  const urlAddress = memes[urlLen].url
+  const [memeImg, setMemeImg] = React.useState(urlAddress)
 
-  const displayImg =()=>{
-      setMemeImg(memes[randomMeme].url)
+  const displayImg =(props)=>{
+      setMemeImg(urlAddress)
       // alert(urlAddress)
   }
 

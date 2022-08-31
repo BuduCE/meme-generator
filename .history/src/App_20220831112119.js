@@ -1,7 +1,7 @@
 import './App.css';
-import Generator from './components/Generator';
 import Meme from './components/Meme';
 import Title from './components/Title';
+import memesData from './memesData'
 
 function App() {
   
@@ -9,7 +9,6 @@ function App() {
     <div className="App">
       <Title />
       <Meme />
-      <Generator />
     </div>
   );
 }
