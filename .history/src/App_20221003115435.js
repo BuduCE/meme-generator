@@ -2,7 +2,6 @@ import React from 'react'
 import './App.css';
 import Body from './components/Body';
 import Count from './components/Count';
-import Form from './components/Form';
 import JokeParent from './components/JokeParent';
 // import Generator from './components/Generator';
 import Meme from './components/Meme';
@@ -19,7 +18,7 @@ function App() {
       <Meme />
       <JokeParent />
       <Unread />
-      <Form />
+      <For
       {/* <Count /> */}
       {/* <Profile name={username}/>
       <Body name={username}/> */}
