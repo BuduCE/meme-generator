@@ -1,6 +1,5 @@
 import React from 'react'
 import './App.css';
-import ApiCall from './components/ApiCall';
 // import Body from './components/Body';
 // import Count from './components/Count';
 import Form from './components/Form';
@@ -21,7 +20,6 @@ function App() {
       <Meme />
       <JokeParent />
       <Unread />
-      <ApiCall />
       {/* <Form />
       <FormTask /> */}
       {/* <Count /> */}
